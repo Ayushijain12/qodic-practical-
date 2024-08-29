@@ -6,13 +6,44 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### npm run dev
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:5173/]((http://localhost:5173/)) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+#### Star Wars Character Viewer
+This React application fetches and displays a list of Star Wars characters from the Star Wars API and provides various features for interacting with the data. The application includes pagination, a search and filter system, a dark/light mode toggle, authentication, and more.
+
+### Features
+Character Display: Show each character as a card with a random image.
+Pagination: Navigate through character data with infinite scrolling.
+Search & Filter: Search characters by name and filter by homeworld, film, or species.
+Character Details Modal: View detailed information about a character in a modal.
+Authentication: Mock JWT authentication with login and logout.
+Dark/Light Mode: Toggle between dark and light mode themes.
+Performance Optimization: Includes lazy loading of images and caching.
+Error Handling: Displays loading indicators and handles API errors.
+Accessibility: Ensures the app is usable for all users with ARIA labels and focus management.
+Testing: Includes integration tests to ensure correct functionality.
+
+### Technologies Used
+React
+Javascript
+Redux   
+Axios (for API requests)
+Material-UI (for UI components)
+Picsum Photos (for random images)
+React Router (for routing)
+Jest (for testing)
+React Hook Form (for handling forms)
+React Context API (for theme management)
+
+###### Please check below mentioned screenshot
+![image](https://github.com/user-attachments/assets/1fdf417a-ba2c-48a8-837f-6628e0921b4e)
+
 
 ### `npm test`
 
