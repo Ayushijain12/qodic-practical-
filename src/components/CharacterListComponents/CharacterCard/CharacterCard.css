@@ -1,0 +1,38 @@
+/* Base card styles */
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 250px; /* Adjust to fit your design */
+  background-color: var(--card-background);
+  color: var(--card-text);
+}
+
+/* Hover effect */
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+/* Character image styling */
+.character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Light mode specific styles */
+.light-mode .character-card {
+  --card-background: #ffffff; /* Light mode background */
+  --card-text: #000000; /* Light mode text color */
+  border: 1px solid #ddd; /* Light mode border */
+}
+
+/* Dark mode specific styles */
+.dark-mode .character-card {
+  --card-background: #333333; /* Dark mode background */
+  --card-text: #ffffff; /* Dark mode text color */
+  border: 1px solid #444; /* Dark mode border */
+}

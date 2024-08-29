@@ -1,0 +1,152 @@
+/* .character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+
+.loading,
+.error {
+  text-align: center;
+  margin: 20px;
+}
+
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+:root {
+  --background-light: #f0f0f0;
+  --background-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --card-background-light: #ffffff;
+  --card-background-dark: #1e1e1e;
+}
+
+[data-theme="light"] {
+  --background: var(--background-light);
+  --text: var(--text-light);
+  --card-background: var(--card-background-light);
+}
+
+[data-theme="dark"] {
+  --background: var(--background-dark);
+  --text: var(--text-dark);
+  --card-background: var(--card-background-dark);
+  --border-color-light: #666666; /* Border color for dark mode */
+  --border-color-dark: #888888; /* Border color for dark mode */
+
+
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.character-card {
+  background-color: var(--card-background);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.filters {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.filters .MuiFormControl-root {
+  min-width: 150px;
+}
+
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 250px;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+.character-list {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.filter-controls {
+  padding: 30px 200px;
+
+}
+
+.MuiInputLabel-root {
+  color: var(--label-color-light); /* Default to light mode label color */
+}
+
+.dark-mode .MuiInputLabel-root {
+  color: var(--label-color-dark); /* Label color in dark mode */
+}
+
+.MuiOutlinedInput-root {
+  border-color: var(--border-color-light); /* Default to light mode border color */
+}
+
+.dark-mode .MuiOutlinedInput-root {
+  border-color: var(--border-color-dark); /* Border color in dark mode */
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: inherit; /* Ensure the border color is inherited from the root */
+}
+
+.MuiInputBase-root {
+  color: var(--text-color); /* Text color inside the text field */
+}
+
+.MuiButton-contained {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
